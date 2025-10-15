@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="LaMP: Language-Motion Pretraining for Motion Generation, Retrieval, and Captioning">
-  <meta property="og:title" content="LaMP: Language-Motion Pretraining for Motion Generation, Retrieval, and Captioningn"/>
-  <meta property="og:description" content="LaMP: Language-Motion Pretraining for Motion Generation, Retrieval, and Captioning"/>
+  <meta name="description" content="From Language To Locomotion: Retargeting-free Humanoid Control via Motion Latent Guidance">
+  <meta property="og:title" content="From Language To Locomotion: Retargeting-free Humanoid Control via Motion Latent Guidance"/>
+  <meta property="og:description" content="From Language To Locomotion: Retargeting-free Humanoid Control via Motion Latent Guidanceg"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/teaser.pdf" />
+  <meta property="og:image" content="static/image/teaser.png" />
   <meta property="og:image:width" content="1808"/>
   <meta property="og:image:height" content="1014"/>
 
 
-  <meta name="twitter:title" content="LaMP: Language-Motion Pretraining for Motion Generation, Retrieval, and Captioning">
-  <meta name="twitter:description" content="LaMP: Language-Motion Pretraining for Motion Generation, Retrieval, and Captioning">
+  <meta name="twitter:title" content="From Language To Locomotion: Retargeting-free Humanoid Control via Motion Latent Guidance">
+  <meta name="twitter:description" content="From Language To Locomotion: Retargeting-free Humanoid Control via Motion Latent Guidance">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/framework.jpg">
+  <meta name="twitter:image" content="static/images/framework.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Motion Generation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>LaMP</title>
+  <title>RoboGhost</title>
   
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHTFKVMFDL"></script>
@@ -36,7 +36,7 @@
   gtag('config', 'G-JHTFKVMFDL');
 </script>
   
-  <link rel="icon" type="image/x-icon" href="static/images/framework.jpg">
+  <link rel="icon" type="image/x-icon" href="static/images/framework.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -57,128 +57,63 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://github.com/aigc3d">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://aigc3d.github.io/mogents/">
-            MoGenTS (NeurIPS 2024)
-          </a>
-          <a class="navbar-item" href="https://aigc3d.github.io/projects/LAM/">
-            LAM
-          </a>
-        </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav>
-
 
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">LaMP: Language-Motion Pretraining for Motion Generation, Retrieval, and Captioning</h1>
+            <h1 class="title is-1 publication-title">From Language To Locomotion: Retargeting-free Humanoid Control via Motion Latent Guidance</h1>
             <h2 class="title is-3 publication-title" style="color:#6e6e6e;"> ICLR 2025</h4>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                Zhe Li<sup>1,2</sup>*,
+                Zhe Li<sup>1</sup>*,
               </span>
               <span class="author-block">
-                  <a href="https://weihao-yuan.com/" target="_blank">Weihao Yuan</a><sup>2</sup>*,
+                Cheng Chi<sup>2</sup>*,
               </span>
               <span class="author-block">
-                <a href="https://hyshkust.github.io/" target="_blank">Yisheng He</a><sup>2</sup>,
+                Yangyang Wei<sup>3</sup>,
               </span>
               <span class="author-block">
-                Lingteng Qiu<sup>2</sup>,
+                Boan Zhu<sup>4</sup>,
               </span>
               <span class="author-block">
-                Shenhao Zhu<sup>2,3</sup>,
+                Yibo Peng<sup>2</sup>,
               </span>
               <span class="author-block">
-                Xiaodong Gu<sup>2</sup>,
+                Tao Huang<sup>5</sup>,
               </span>
               <span class="author-block">
-                Weichao Shen<sup>2</sup>,
+                Pengwei Wang<sup>2</sup>,
               </span>
               <span class="author-block">
-                Yuan Dong<sup>2</sup>,
+                Zhongyuan Wang<sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=GHOQKCwAAAAJ&hl=zh-CN&oi=ao" target="_blank">Zilong Dong</a><sup>2</sup>†,
+                Shanghang Zhang<sup>2,6</sup>†
               </span>
               <span class="author-block">
-                Laurence T. Yang<sup>1</sup>†
+                Chang Xu<sup>1</sup>†
               </span>
+              
+              
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="eql-cntrb"><large><br><sup>1</sup>Huazhong University of Science and Technology</large></span>
-              <span class="eql-cntrb"><large><br><sup>2</sup>Alibaba Group</large></span> <br>
-              <span class="eql-cntrb"><large><sup>3</sup>Nanjing University</large></span>
+              <span class="eql-cntrb"><large><br><sup>1</sup>University of Sydney</large></span>
+              <span class="eql-cntrb"><large><br><sup>2</sup>BAAI</large></span> <br>
+              <span class="eql-cntrb"><large><sup>3</sup>Harbin Institute of Technology</large></span>
+              <span class="eql-cntrb"><large><sup>3</sup>Hong Kong University of Science and Technology</large></span>
+              <span class="eql-cntrb"><large><sup>3</sup>Shanghai Jiao Tong University</large></span>
+              <span class="eql-cntrb"><large><sup>3</sup>Peking University</large></span>
+              
             </div>
             <div class="is-size-5 publication-authors">
               <span class="eql-cntrb">* Equal Contribution &nbsp &nbsp † Corresponding Author </span>
             </div>
 
-            <div class="column has-text-centered">
-              <!-- <div class="publication-links"> NeurIPS 2024 </div> -->
-
-              <!-- Arxiv link -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2410.07093" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fas fa-file-pdf"></i>
-                </span>
-                <span>Paper</span>
-              </a>
-            </span>
-
-            <!-- Video link -->
-            <!-- <span class="link-block">
-              <a href="https://www.youtube.com/watch?v=4hMFBvMFSI8" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fab fa-youtube"></i>
-                </span>
-                <span>Youtube</span>
-              </a>
-            </span> -->
-
-            <!-- Github link -->
-            <span class="link-block">
-              <a href="https://github.com/gentlefress/LaMP" target="_blank"
-              class="external-link button is-normal is-rounded is-dark">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <span>Code<span>
-              </a>
-            </span>
 
           </div>
         </div>
@@ -198,15 +133,12 @@
           <!-- <img src="static/images/framework.pdf" alt="MY ALT TEXT"/> -->
           <p>
             Language plays a vital role in the realm of human motion.
-Existing methods have largely depended on CLIP text embeddings for motion generation, yet they fall short in effectively aligning language and motion due to CLIP's pretraining on static image-text pairs.
-This work introduces \textbf{LaMP}, a novel \textbf{La}nguage-\textbf{M}otion \textbf{P}retraining model, which transitions from a language-vision to a more suitable language-motion latent space. 
-It addresses key limitations by generating motion-informative text embeddings, significantly enhancing the relevance and semantics of generated motion sequences. 
-With LaMP, we advance three key tasks: text-to-motion generation, motion-text retrieval, and motion captioning through aligned language-motion representation learning.
-For generation, we utilize LaMP to provide the text condition instead of CLIP, and an autoregressive masked prediction is designed to achieve mask modeling without rank collapse in transformers.
-For retrieval, motion features from LaMP’s motion transformer interact with query tokens to retrieve text features from the text transformer, and vice versa.
-For captioning, we finetune a large language model with the language-informative motion features to develop a strong motion captioning model.
-In addition, we introduce the LaMP-BertScore metric to assess the alignment of generated motions with textual descriptions. 
-Extensive experimental results on multiple datasets demonstrate substantial improvements over previous methods across all three tasks.
+Natural language offers a natural interface for humanoid robots, but existing language-guided humanoid locomotion pipelines remain cumbersome and unreliable. They typically decode human motion, retarget it to robot morphology, and
+then track it with a physics-based controller. However, this multi-stage process is prone to cumulative errors, introduces high latency, and yields weak coupling between semantics and control. These limitations call for a more direct pathway from language to action, one that eliminates fragile intermediate stages. There-
+fore, we present RoboGhost, a retargeting-free framework that directly conditions humanoid policies on language-grounded motion latents. By bypassing explicit motion decoding and retargeting, RoboGhost enables a diffusion-based policy to denoise executable actions directly from noise, preserving semantic intent and
+supporting fast, reactive control. A hybrid causal transformer–diffusion motion generator further ensures long-horizon consistency while maintaining stability and diversity, yielding rich latent representations for precise humanoid behavior.
+Extensive experiments demonstrate that RoboGhost substantially reduces deployment latency, improves success rates and tracking accuracy, and produces smooth, semantically aligned locomotion on real humanoids. Beyond text, the framework
+naturally extends to other modalities such as images, audio, and music, providing a general foundation for vision–language–action humanoid systems.
           </p>
         </div>
       </div>
