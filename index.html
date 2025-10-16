@@ -153,7 +153,9 @@ naturally extends to other modalities such as images, audio, and music, providin
       <div class="content has-text-justified">
         <img src="static/images/teaser.png" width="100%" height="100%" />
         <p>
-          LaMP overview. We conduct joint training for contrastive learning, matching, and bidirectional text-motion translation by leveraging the textual features extracted from tokenized text descriptions via the text transformer and the motion features derived from the motion transformer.
+          RoboGhost is a retargeting-free latent driven policy for language-guided humanoid locomotion. By removing the dependency on motion retargeting, it thus allows robots to be controlled directly via open-ended language commands. The figure showcases (a) the previous pipeline with motion retargeting, (b) our proposed
+          retargeting-free latent-driven pipeline, (c) quantitative comparisons of success rate and time cost between
+          baseline and RoboGhost, (d) performing the backflip, and (e) dancing and leaping forward.
         </p>
       </div>
       <br>
@@ -161,7 +163,7 @@ naturally extends to other modalities such as images, audio, and music, providin
       <div class="content has-text-justified">
         <img src="static/images/framework.png" width="100%" height="100%" />
         <p>
-          LaMP-T2M and LaMP-M2T frameworks overview. (Left) Pretrained LaMP’s text transformer is employed to extract condition embedding and autoregressive mask prediction is performed. (Right) Finetuning an LLM to achieve motion captioning.
+          Overview of RoboGhost. We propose a two-stage approach: a motion latent is first generated, then a MoE-based teacher policy is trained with RL and a diffusion-based student policy is trained to denoise actions conditioned on motion latent. This latent-driven scheme bypasses the need for motion retargeting.
         </p>
       </div>
   </div>
